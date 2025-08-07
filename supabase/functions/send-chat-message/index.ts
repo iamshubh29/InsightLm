@@ -37,7 +37,7 @@ serve(async (req) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': authHeader,
+        'Authorization': `Bearer ${authHeader}`,
       },
       body: JSON.stringify({
         session_id,
